@@ -675,52 +675,16 @@
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form onsubmit="sendEmail(); reset(); return false;">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="name">Phone Number</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <br><br>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-          <script src="https://smtpjs.com/v3/smtp.js"></script>
-          <script>
-            function sendEmail(){
-              Email.send({
-              Host : "smtp.gmail.com",
-              Username : "spandanmukherjee2003@gmail.com",
-              Password : "Spandan3000",
-              To : 'spandanmukherjeegithub@gmail.com',
-              From : document.getElementById("email").value,
-              Subject : "New Contact form enquiry",
-              Body : "And this is the body"
-          }).then(
-            message => alert(message)
-          );
-            }
-            
-          </script>
-
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex flex-column align-items-stretch">
+            <h3>Welcome to this space where you all can directly contact me. It's a small space where you can meet new people. You can easily text or DM me directly from that space.</h3>
+            <button class="custom-button">
+                Join the Space
+            </button>
+            <br>
+            <p align="center"> OR </p>
+            <h3>If you are viewing on a PC or a Laptop, just scan the QR code to join the space.</h3>
+            <img src="assets/img/connect.png" alt="QR Code" class="qr-code">
         </div>
-
       </div>
     </section><!-- End Contact Section -->
 
